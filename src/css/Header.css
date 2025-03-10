@@ -1,0 +1,20 @@
+nav.header{
+    width:90%; max-width: 1200px;
+    height: 60px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li.logo{
+font-size: 28px; font-weight:800;
+width: 100px; text-align: center;
+}
+ul.gnb{
+   display: flex;
+}
+ul.gnb>li{
+margin-left:10px;
+font-size: 18px;
+font-weight: 500;
+}
