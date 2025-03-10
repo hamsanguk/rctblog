@@ -1,6 +1,7 @@
 import React, { Suspense, JSX } from "react";
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import routeComponents from '../routes';
+import '../css/Til.css'
 
 
 
