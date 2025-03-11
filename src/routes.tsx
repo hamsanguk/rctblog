@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from "react";
 
-// generateRoutes 함수 수정: start를 증가시키지 말고 day를 증가시킴
+
 const generateRoutes = (start: number, end: number) => {
     const route = [];
     for (let day = start; day <= end; day++) { // start 대신 day를 증가시킴
@@ -9,7 +9,7 @@ const generateRoutes = (start: number, end: number) => {
             day: String(day),
         });
     }
-    return route; // 배열을 반환
+    return route; 
 };
 
 const routes = generateRoutes(1, 6); // 추가될때마다 오른쪽 숫자++ 수동으로변경
