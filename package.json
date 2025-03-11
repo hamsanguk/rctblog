@@ -1,6 +1,7 @@
 {
   "name": "rctblg",
   "version": "0.1.0",
+  "homepage": "https://hamsanguk.github.io/rctblog/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

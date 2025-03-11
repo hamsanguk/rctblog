@@ -4,8 +4,6 @@ import routeComponents from '../routes';
 import '../css/Til.css'
 
 
-
-
 const Til = (): JSX.Element => {
   const navigate = useNavigate();
 
