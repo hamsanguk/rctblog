@@ -14,7 +14,7 @@ const Til = (): JSX.Element => {
   };
 
   return (
-    <div>
+    <div className="btnWrap">
       <ul>
         {routeComponents.map((route, i) => (
           <li key={i}>

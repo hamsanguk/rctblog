@@ -12,7 +12,7 @@ const generateRoutes = (start: number, end: number) => {
     return route; // 배열을 반환
 };
 
-const routes = generateRoutes(1, 3); // 추가될때마다 오른쪽 숫자++ 수동으로변경
+const routes = generateRoutes(1, 6); // 추가될때마다 오른쪽 숫자++ 수동으로변경
 
 const loadComponent = (day: string) => {
     return React.lazy(() => import(`./til/Day${day}`)); // 동적으로 컴포넌트 로딩
