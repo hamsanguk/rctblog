@@ -1,7 +1,7 @@
 import React, { Suspense, lazy } from "react";
 
 
-const generateRoutes = (start: number, end: number) => {
+const generateTilRoutes = (start: number, end: number) => {
     const route = [];
     for (let day = start; day <= end; day++) { // start 대신 day를 증가시킴
         route.push({
@@ -12,10 +12,10 @@ const generateRoutes = (start: number, end: number) => {
     return route; 
 };
 
-const routes = generateRoutes(1, 6); // 추가될때마다 오른쪽 숫자++ 수동으로변경
+const routes = generateTilRoutes(1, 10); // 추가될때마다 오른쪽 숫자++ 수동으로변경
 
 const loadComponent = (day: string) => {
-    return React.lazy(() => import(`./til/Day${day}`)); // 동적으로 컴포넌트 로딩
+    return lazy(() => import(`./til/Day${day}`)); // 동적으로 컴포넌트 로딩
 };
 
 // routes 배열을 매핑 각 경로와 동적 컴포넌트를 포함한 routeComponents 배열 생성

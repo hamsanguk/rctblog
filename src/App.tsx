@@ -12,8 +12,9 @@ function App():JSX.Element {
 
     <div className="App">
       <Header/>
+      <Til/>
       <Routes>
-        <Route path='/' element={<Til/>}/> {/*Til 에서 라우트 사용중이라 til내부 라우팅 작동불가*/}
+        {/*Til 에서 라우트 사용중이라 til내부 라우팅 작동불가*/}
         <Route path='/dummy1' element={<Dummy1/>}/>
         <Route path='/dummy2' element={<Dummy2/>}/>
       </Routes>
