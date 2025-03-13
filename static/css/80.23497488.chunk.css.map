@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/80.23497488.chunk.css","mappings":"AAAA,YAEI,gBAAiB,CADN,gBAAiB,CAA5B,SAEJ,CACA,SACI,UAAU,CACV,cACJ","sources":["css/dayform.css"],"sourcesContent":[".daycontent{\n    width:90%; max-width: 1200px;\n    margin: 20px auto;\n}\n.comment{\n    color:#999;\n    font-size: 10px;\n}\n\n"],"names":[],"sourceRoot":""}
