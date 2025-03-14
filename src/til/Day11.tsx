@@ -22,6 +22,7 @@ const Day28=():JSX.Element=>{
                         <li>전망에 확신없는경우</li>
                     </ul>
                 </p>
+                
                 <hr />
 
 
