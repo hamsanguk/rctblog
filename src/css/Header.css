@@ -1,3 +1,6 @@
+div.headerWrap{
+    background-color: #999;
+}
 nav.header{
     width:90%; max-width: 1200px;
     height: 60px;

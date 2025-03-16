@@ -4,7 +4,7 @@ import '../css/Header.css'
 
 const Header = (): JSX.Element => {
   return (
-    <div>
+    <div className="headerWrap">
       <nav className="header">
         <li className="logo"><Link to="/">BLOG</Link></li> 
         

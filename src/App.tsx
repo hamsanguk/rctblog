@@ -18,7 +18,6 @@ function App():JSX.Element {
         <Route path='/dummy1' element={<Dummy1/>}/>
         <Route path='/dummy2' element={<Dummy2/>}/>
       </Routes>
-      
     </div>
     </BrowserRouter>
   );
