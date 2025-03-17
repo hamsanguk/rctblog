@@ -14,7 +14,7 @@ function App():JSX.Element {
       <Header/>
       <Routes>
         {/*Til 에서 라우트 사용중이라 til내부 라우팅 작동불가*/}
-        <Route path='/dummy1' element={<MyWallet/>}/>
+        <Route path='/wallet' element={<MyWallet/>}/>
         <Route path='/dummy2' element={<Dummy2/>}/>
       </Routes>
       <Til/>

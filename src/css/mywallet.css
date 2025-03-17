@@ -1,0 +1,195 @@
+/* 기본 스타일 */
+.wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 1080px;
+  }
+  
+  /* 지갑 생성 버튼 */
+  .create-wallet-btn {
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .create-wallet-btn:hover {
+    background-color: #aaa;
+  }
+  
+  /* 키 정보 */
+  .keywrap {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .keywrap li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    word-break: break-all;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .privatekey{
+    justify-content: space-around;
+  }
+  .privatekey .textNone{
+    display: none;
+  }
+  
+  /* 복사 버튼 */
+  .copybutton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* 잔액 조회 버튼 */
+  .balance-btn {
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  .balance-btn:hover {
+    background-color: #999;
+  }
+  
+  /* 현재 잔액 표시 */
+  h3 {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+  .balance {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* 송금 영역 */
+  .transaction {
+    margin-top: 20px;
+  }
+  .transaction input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .send-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  .send-btn:hover {
+    background-color: #999;
+  }
+  
+  /* 거래 해시 표시 */
+  p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* 지갑 삭제 버튼 */
+  .delete-wallet-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-top: 15px;
+  }
+  .delete-wallet-btn:hover {
+    background-color: #c9302c;
+  }
+  
+  /* 복사 성공 메시지 */
+  .copy-success {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .referenceLink{
+    margin:40px;
+    text-align: left;
+  }
+  .referenceLink a:hover{
+    margin:40px;transition: 0.3s;
+  }
+  .referenceLink a:hover{
+    cursor: pointer;
+    color:purple;
+  }
+  /* 트랜잭션 해시 모달창 */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .transaction {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .close-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .close-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  
