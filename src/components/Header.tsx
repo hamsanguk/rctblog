@@ -13,7 +13,7 @@ const Header = (): JSX.Element => {
             <Link to="/">TIL</Link>
           </li>
           <li>
-            <Link to="/dummy1">dummy1</Link>
+            <Link to="/wallet">MyWallet</Link>
           </li>
           <li>
             <Link to="/dummy2">dummy2</Link>
