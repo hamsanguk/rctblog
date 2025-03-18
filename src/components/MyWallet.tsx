@@ -143,24 +143,22 @@ const MyWallet = () => {
             )}
           </ul>
         </div>
-        <span>(하단에 스크롤)</span>
-      </div>
-
-      <div className="rpc-selection">
-        <label>RPC URL 선택:</label>
-        <select value={rpcUrl} onChange={handleRpcChange}>
-          {Object.entries(rpcUrls).map(([key, url]) => (
-            <option key={key} value={url}>
-              {key}
-            </option>
-          ))}
-        </select>
       </div>
 
       {!wallet ? (
         <button onClick={createWallet} className="create-wallet-btn">지갑 생성</button>
       ) : (
         <>
+            <div className="rpc-selection">
+            <label>RPC URL 선택:</label>
+            <select value={rpcUrl} onChange={handleRpcChange}>
+              {Object.entries(rpcUrls).map(([key, url]) => (
+                <option key={key} value={url}>
+                  {key}
+                </option>
+              ))}
+            </select>
+          </div>
           <ul className="keywrap">
             <li className="address">
               <button className="copybutton" onClick={() => copyToClipboard(wallet.address, "주소")}>
@@ -205,7 +203,13 @@ const MyWallet = () => {
           </div>
 
           <button onClick={deleteWallet} className="delete-wallet-btn">현재 지갑 삭제</button>
+          <ul className="referenceLink">
+        <li><a href="https://www.kaia.io/faucet" target="blank">kaia faucet 받기</a></li>
+        <li><a href="https://faucet.polygon.technology/" target="blank">polygon faucet 받기</a></li>
+        <li><a href="https://kairos.kaiascan.io/" target="blank">카이아 스캔(거래 해시를 조회합니다)</a></li>
+      </ul>
         </>
+        
       )}
     </div>
   );

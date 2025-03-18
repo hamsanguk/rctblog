@@ -8,7 +8,7 @@ import Dummy2 from './components/Dummy2';
 
 function App():JSX.Element {
   return (
-   <BrowserRouter basename="/rctblog">
+   <BrowserRouter>
 
     <div className="App">
       <Header/>
