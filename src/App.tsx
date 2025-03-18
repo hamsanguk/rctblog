@@ -1,7 +1,7 @@
+import './App.css';
 import React,{JSX} from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './components/Header'
-import './App.css';
 import Til from './components/Til';
 import MyWallet from './components/MyWallet';
 import Dummy2 from './components/Dummy2';

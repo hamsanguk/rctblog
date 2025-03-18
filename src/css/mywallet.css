@@ -1,15 +1,37 @@
 /* 기본 스타일 */
+body{
+  position:relative;
+}
+.App { 
+}
 .wrap {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 12px;
-    background: #f9f9f9;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    height: 1080px;
-  }
-  
+  width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  text-align: center;
+  min-height: 1500px; /* 스크롤 확보 */
+  /* 부모 요소 기준 */
+}
+
+.prevaccount {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 300px; 
+  right: 10px;
+  margin-left: auto;
+  background: white;
+  padding: 10px;
+  overflow-x: scroll;
+}
+.prevaccount span{
+  color:#aaa;
+}
+
+
   /* 지갑 생성 버튼 */
   .create-wallet-btn {
     background-color: #ccc;
@@ -35,7 +57,6 @@
   .keywrap li {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background: #fff;
     padding: 10px;
     border-radius: 6px;
@@ -44,12 +65,8 @@
     word-break: break-all;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  .privatekey{
-    justify-content: space-around;
-  }
-  .privatekey .textNone{
-    display: none;
-  }
+  
+
   
   /* 복사 버튼 */
   .copybutton {
@@ -91,7 +108,7 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 6px;
   }
   
@@ -107,6 +124,12 @@
   }
   .send-btn:hover {
     background-color: #999;
+  }
+  .gas-setting{
+    display: flex; justify-content: space-between;
+   }
+  .gas-setting input{
+    width: 45%; 
   }
   
   /* 거래 해시 표시 */
@@ -139,7 +162,7 @@
   }
   .referenceLink{
     margin:40px;
-    text-align: left;
+    
   }
   .referenceLink a:hover{
     margin:40px;transition: 0.3s;
@@ -148,19 +171,7 @@
     cursor: pointer;
     color:purple;
   }
-  /* 트랜잭션 해시 모달창 */
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
+  
   
   .modal {
     background-color: white;
