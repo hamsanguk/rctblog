@@ -10,13 +10,13 @@ const Header = (): JSX.Element => {
         
         <ul className="gnb">
           <li>
-            <Link to="/">TIL</Link>
+            <Link to="/">TIL</Link> |
           </li>
           <li>
-            <Link to="/wallet">MyWallet</Link>
+            <Link to="/wallet">MyWallet</Link> |
           </li>
           <li>
-            <Link to="/dummy2">dummy2</Link>
+            <Link to="/explorer">Explorer</Link>
           </li>
         </ul>
       </nav>
