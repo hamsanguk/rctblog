@@ -11,7 +11,7 @@ import Address from './components/Address';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/rctblog">
       <div className="App">
         <Header />
         <Routes>
