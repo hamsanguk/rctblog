@@ -1,0 +1,84 @@
+/* 기본 스타일 */
+.blockPage {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 */
+.blockPage h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 로딩 및 오류 메시지 */
+.blockPage p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* 에러 메시지 스타일 */
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* 블록 세부 정보 */
+.blockDetails {
+    margin-top: 20px;
+}
+
+.blockInfo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+/* 각 정보 항목 */
+.blockInfo div {
+    margin-bottom: 10px;
+}
+
+/* 강조된 텍스트 */
+.blockInfo strong {
+    color: #333;
+}
+
+/* 트랜잭션 목록 */
+.transactions {
+    margin-top: 20px;
+}
+
+.transactions h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.transactions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transactions li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.transactions li strong {
+    color: #3498db;
+}
+
+
+.transactions li div {
+    font-size: 0.9rem;
+    color: #555;
+}

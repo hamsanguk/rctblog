@@ -27,9 +27,9 @@ const Address: React.FC = () => {
                     return;
                 }
                 // 최근 거래 내역을 가져오는 로직
-                const transactions = await getRecentTransactions(address);
+                const transactions = await getRecentTransactions( address );
 
-                setAccountData({ balance, transactions }); // 잔액과 거래 내역 저장
+                setAccountData({ balance, /**transactions*/ }); // 잔액과 거래 내역 저장
             } catch (err) {
                 setError("주소 정보를 불러오는 중 오류가 발생했습니다.");
             } finally {
@@ -39,7 +39,6 @@ const Address: React.FC = () => {
 
         fetchAccountData();
     }, [address]);
-
     return (
         <div className="addressPage">
             <h1>주소 상세</h1>
@@ -47,17 +46,9 @@ const Address: React.FC = () => {
             {error && <p className="error">{error}</p>}
             {accountData && (
                 <div className="accountDetails">
-                    <h3>주소: {address}</h3>
+                    <h3>{address}</h3>
                     <p>잔액: {accountData.balance} wei</p>
-                    <h4>최근 거래 내역:</h4>
-                    <ul>
-                        {accountData.transactions.map((tx: any, index: number) => (
-                            <li key={index}>
-                                <p>트랜잭션 해시: {tx.hash}</p>
-                                <p>상태: {tx.status ? "성공" : "실패"}</p>
-                            </li>
-                        ))}
-                    </ul>
+                    <p>최근 거래 내역: {JSON.stringify(accountData.transactions, bigIntReplacer, 2)}</p>
                 </div>
             )}
         </div>

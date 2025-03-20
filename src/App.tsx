@@ -21,7 +21,7 @@ function App() {
           <Route path="/explorer/block/:blockNumber" element={<BlockPage />} />
           <Route path="/explorer/address/:address" element={<Address />} /> {/* 추가된 주소 페이지 경로 */}
         </Routes>
-        <Til />
+        <Til />{/** til route 사용,추가하면 동작xdnsn*/}
       </div>
     </BrowserRouter>
   );

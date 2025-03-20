@@ -1,6 +1,7 @@
 import Web3 from "web3";
 
-const API_KEY = 'f758d04f5c2c467389c34d512e7fa686'
+
+const API_KEY = 'f758d04f5c2c467389c34d512e7fa686';
 const web3 = new Web3(`https://public-en-kairos.node.kaia.io/v3/${API_KEY}`);
 
 // 트랜잭션 조회
@@ -36,20 +37,18 @@ export const getBalance = async (address: string) => {
     }
 };
 
-// 최근 거래 내역 (가상의 예시로 작성)
-// 실제 구현에서는, 해당 주소에 대한 최신 트랜잭션 정보를 가져오는 API 로직을 추가해야 합니다.
-export const getRecentTransactions = async (address: string) => {
+
+
+export const getRecentTransactions = async (address:string) => {
     try {
-        const transactions = [
-            { hash: "0x1234", status: true },
-            { hash: "0x5678", status: false },
-            { hash: "0x9abc", status: true },
-            { hash: "0xdef0", status: true },
-            { hash: "0x1112", status: false }
-        ];
+        const transactions = await web3.eth.getBalance(address);
         return transactions;
     } catch (err) {
         console.error("최근 거래 내역 조회 실패:", err);
-        return [];
+        return null;
     }
-};
+}
+
+
+
+

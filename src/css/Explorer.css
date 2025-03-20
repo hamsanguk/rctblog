@@ -1,7 +1,37 @@
-.pageWrap{
-    height: 1080px;
+.pageWrap {
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
-.searchBar{
-    width: 500px;
-    height: 40px;
+
+.searchBar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.searchBar:focus {
+    border-color: #888;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #aaa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
 }

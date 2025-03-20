@@ -1,7 +1,6 @@
 {
   "name": "rctblg",
   "version": "0.1.0",
-  
   "private": false,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -17,9 +16,11 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^6.30.0",
     "react-scripts": "5.0.1",
+    "reflect-metadata": "^0.2.2",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
-    "web3": "^4.16.0"
+    "web3": "^4.16.0",
+    "web3-core": "^4.7.1"
   },
   "scripts": {
     "start": "react-scripts start",

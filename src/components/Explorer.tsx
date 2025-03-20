@@ -21,19 +21,16 @@ const Explorer: React.FC = () => {
     const handleSearch = async () => {
         setResult(null);
         setError(null);
-
         if (searchQuery.trim() === "") {
             setError("검색어를 입력하세요.");
             return;
         }
-
         try {
             // 주소 조회
             if (/^0x[a-fA-F0-9]{40}$/.test(searchQuery)) { // 16진수 주소 형식 검사
                 navigate(`/explorer/address/${searchQuery}`); // 주소 페이지로 이동
                 return;
             }
-
             // 트랜잭션 조회
             const txResult = await getTransaction(searchQuery);
             if (txResult) {
@@ -41,7 +38,6 @@ const Explorer: React.FC = () => {
                 navigate(`tx/${searchQuery}`); // 트랜잭션 페이지로 이동
                 return;
             }
-
             // 블록 조회
             if (/^\d+$/.test(searchQuery)) {
                 const blockResult = await getBlock(searchQuery);
@@ -66,15 +62,14 @@ const Explorer: React.FC = () => {
                 placeholder="블록 번호, 트랜잭션 해시, 또는 주소 입력"
                 value={searchQuery}
                 onChange={handleChange}
+                onKeyDown={(evt)=>{
+                    if(evt.key === "Enter"){
+                        handleSearch();
+                    }
+                }}
             />
             <button onClick={handleSearch}>검색</button>
-            {error && <p className="error">{error}</p>}
-            {result && (
-                <div className="result">
-                    <h3>검색 결과:</h3>
-                    <pre>{JSON.stringify(result, bigIntReplacer, 2)}</pre>
-                </div>
-            )}
+            
         </div>
     );
 };

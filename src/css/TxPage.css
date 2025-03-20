@@ -1,0 +1,58 @@
+/* 기본 스타일 */
+.txPage {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 1080px;
+}
+
+/* 제목 */
+.txPage h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* 로딩 및 오류 메시지 */
+.txPage p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* 에러 메시지 스타일 */
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* 트랜잭션 세부 정보 */
+.txDetails {
+    margin-top: 20px;
+}
+
+.txInfo {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* 각 정보 항목 */
+.txInfo div {
+    margin-bottom: 10px;
+}
+
+/* 강조된 텍스트 */
+.txInfo strong {
+    color: #333;
+}
+
+/* 트랜잭션 해시 */
+.txDetails h3 {
+    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
