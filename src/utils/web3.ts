@@ -37,8 +37,6 @@ export const getBalance = async (address: string) => {
     }
 };
 
-
-
 export const getRecentTransactions = async (address:string) => {
     try {
         const transactions = await web3.eth.getBalance(address);
