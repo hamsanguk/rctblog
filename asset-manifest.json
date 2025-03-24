@@ -1,40 +1,15 @@
 {
   "files": {
-    "main.css": "/rctblog/static/css/main.7c057bf8.css",
-    "main.js": "/rctblog/static/js/main.e53a19f0.js",
-    "static/js/257.661d7eb5.chunk.js": "/rctblog/static/js/257.661d7eb5.chunk.js",
-    "static/js/989.35e83a4c.chunk.js": "/rctblog/static/js/989.35e83a4c.chunk.js",
-    "static/css/80.23497488.chunk.css": "/rctblog/static/css/80.23497488.chunk.css",
-    "static/js/80.021f78d0.chunk.js": "/rctblog/static/js/80.021f78d0.chunk.js",
-    "static/js/107.cb881595.chunk.js": "/rctblog/static/js/107.cb881595.chunk.js",
-    "static/js/194.4d05bd68.chunk.js": "/rctblog/static/js/194.4d05bd68.chunk.js",
-    "static/js/919.b56edc52.chunk.js": "/rctblog/static/js/919.b56edc52.chunk.js",
-    "static/js/936.798668eb.chunk.js": "/rctblog/static/js/936.798668eb.chunk.js",
-    "static/js/653.b5cb2074.chunk.js": "/rctblog/static/js/653.b5cb2074.chunk.js",
-    "static/js/302.a6516376.chunk.js": "/rctblog/static/js/302.a6516376.chunk.js",
-    "static/js/771.c1efb91b.chunk.js": "/rctblog/static/js/771.c1efb91b.chunk.js",
-    "static/js/124.0e589034.chunk.js": "/rctblog/static/js/124.0e589034.chunk.js",
-    "static/js/409.f5e85d50.chunk.js": "/rctblog/static/js/409.f5e85d50.chunk.js",
+    "main.css": "/rctblog/static/css/main.0a56bc19.css",
+    "main.js": "/rctblog/static/js/main.590e90d1.js",
     "static/js/453.d4e1a347.chunk.js": "/rctblog/static/js/453.d4e1a347.chunk.js",
     "index.html": "/rctblog/index.html",
-    "main.7c057bf8.css.map": "/rctblog/static/css/main.7c057bf8.css.map",
-    "main.e53a19f0.js.map": "/rctblog/static/js/main.e53a19f0.js.map",
-    "257.661d7eb5.chunk.js.map": "/rctblog/static/js/257.661d7eb5.chunk.js.map",
-    "989.35e83a4c.chunk.js.map": "/rctblog/static/js/989.35e83a4c.chunk.js.map",
-    "80.23497488.chunk.css.map": "/rctblog/static/css/80.23497488.chunk.css.map",
-    "80.021f78d0.chunk.js.map": "/rctblog/static/js/80.021f78d0.chunk.js.map",
-    "194.4d05bd68.chunk.js.map": "/rctblog/static/js/194.4d05bd68.chunk.js.map",
-    "919.b56edc52.chunk.js.map": "/rctblog/static/js/919.b56edc52.chunk.js.map",
-    "936.798668eb.chunk.js.map": "/rctblog/static/js/936.798668eb.chunk.js.map",
-    "653.b5cb2074.chunk.js.map": "/rctblog/static/js/653.b5cb2074.chunk.js.map",
-    "302.a6516376.chunk.js.map": "/rctblog/static/js/302.a6516376.chunk.js.map",
-    "771.c1efb91b.chunk.js.map": "/rctblog/static/js/771.c1efb91b.chunk.js.map",
-    "124.0e589034.chunk.js.map": "/rctblog/static/js/124.0e589034.chunk.js.map",
-    "409.f5e85d50.chunk.js.map": "/rctblog/static/js/409.f5e85d50.chunk.js.map",
+    "main.0a56bc19.css.map": "/rctblog/static/css/main.0a56bc19.css.map",
+    "main.590e90d1.js.map": "/rctblog/static/js/main.590e90d1.js.map",
     "453.d4e1a347.chunk.js.map": "/rctblog/static/js/453.d4e1a347.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c057bf8.css",
-    "static/js/main.e53a19f0.js"
+    "static/css/main.0a56bc19.css",
+    "static/js/main.590e90d1.js"
   ]
 }
