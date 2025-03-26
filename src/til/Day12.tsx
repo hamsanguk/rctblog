@@ -1,11 +1,11 @@
 import React,{JSX} from "react";
-
+import "../css/dayform.css"
 const Day29=()=>{
     return(
         <dl>
-            <dt>3/14 day13</dt>
+            <dt className="daybutton">3/14 day13</dt>
             <dd>
-                <h3>DApp 지갑</h3>
+                <h3 className="daycontent">DApp 지갑</h3>
                 <ul>
                     <li><h3>비결정적 월렛</h3></li>
                     <li>각 키가 독립적으로 생성되며, 시드없이 무작위로 생성이된다,재사용 없음</li>

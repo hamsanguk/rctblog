@@ -1,5 +1,5 @@
 import React,{JSX} from "react";
-
+import "../css/dayform.css"
 const Day26=():JSX.Element=>{
     return(
         <dl>

@@ -1,6 +1,6 @@
 import React,{JSX} from "react";
 
-const Day15 = ():JSX.Element=>{
+const Day13 = ():JSX.Element=>{
     return(
         <div>
             <h4>변수 선언 방식</h4>
@@ -55,3 +55,5 @@ const Day15 = ():JSX.Element=>{
         </div>
     )
 }
+
+export default Day13;

@@ -1,12 +1,14 @@
 /* 기본 스타일 */
 body{
-  position:relative;
+ 
 }
 .App { 
+ 
 }
 .wrap {
   width: 720px;
   padding: 20px;
+  margin-left:10px;
   border-radius: 12px;
   background: #ddd;
   text-align: center;

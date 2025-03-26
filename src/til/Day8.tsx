@@ -1,5 +1,5 @@
 import React, { JSX } from "react";
-
+import "../css/dayform.css"
 const Day8 = (): JSX.Element => {
     return (
         <dl className="dayWrap">
