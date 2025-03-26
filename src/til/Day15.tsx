@@ -1,4 +1,4 @@
-import React,{JSX} from "react";
+import React,{JSX} from "react"; //수정하기
 import "../css/dayform.css"
 const Day13=():JSX.Element=>{
     return(
