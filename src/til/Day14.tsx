@@ -3,7 +3,7 @@ import React,{JSX} from "react";
 const Day14=():JSX.Element=>{
     return(
         <div>
-            <dl>
+            <dl className="dayWrap">
                 <dt className="daybutton">day36 solidity문법</dt>
                 <dd className="daycontent">
                     <h3>참조타입</h3>

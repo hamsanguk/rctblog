@@ -3,7 +3,7 @@ import "../css/dayform.css";
 
 const Day29 = (): JSX.Element => {
   return (
-    <dl>
+    <dl className="dayWrap">
       <dt className="daybutton">3/14 Day 13</dt>
       <dd>
         <h3 className="daycontent">DApp 지갑</h3>
