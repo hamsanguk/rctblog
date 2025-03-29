@@ -1,8 +1,16 @@
 import Web3 from "web3";
+import * as dotenv from "dotenv";
+
+// dotenv.config();
+// const INFURA_API_KEY = process.env.INFURA_API_KEY
+
+//dotenv로 key숨기기
+
+const INFURA_API_KEY="f758d04f5c2c467389c34d512e7fa686"
 
 
-const API_KEY = 'f758d04f5c2c467389c34d512e7fa686';
-const web3 = new Web3(`https://public-en-kairos.node.kaia.io/v3/${API_KEY}`);
+
+const web3 = new Web3(`https://public-en-kairos.node.kaia.io/v3/${ INFURA_API_KEY }`);
 
 // 트랜잭션 조회
 export const getTransaction = async (txHash: string) => {
@@ -35,7 +43,7 @@ export const getBalance = async (address: string) => {
         console.error("주소 잔액 조회 실패:", err);
         return null;
     }
-};
+}
 
 export const getRecentTransactions = async (address:string) => {
     try {
@@ -46,7 +54,5 @@ export const getRecentTransactions = async (address:string) => {
         return null;
     }
 }
-
-
 
 

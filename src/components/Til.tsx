@@ -3,7 +3,7 @@ import routeComponents from "../routes"; // 동적으로 생성된 routes 불러
 import { useNavigate } from "react-router-dom";
 
 const BlogComponent: React.FC = () => {
-  const [selectedDay, setSelectedDay] = useState<string>("16"); // 기본적으로 Day15를 선택
+  const [selectedDay, setSelectedDay] = useState<string>("17"); 
   const navigate = useNavigate();
 
   // 선택된 day에 맞는 동적 컴포넌트 찾기

@@ -1,7 +1,7 @@
 import React,{JSX} from "react";
 import "../css/dayform.css";
 
-const Day29 = (): JSX.Element => {
+const Day12 = (): JSX.Element => {
   return (
     <dl className="dayWrap">
       <dt className="daybutton">3/14 Day 13</dt>
@@ -24,4 +24,4 @@ const Day29 = (): JSX.Element => {
   );
 };
 
-export default Day29;
+export default Day12;
