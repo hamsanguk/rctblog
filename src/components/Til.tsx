@@ -1,46 +1,47 @@
-import React, { useState, Suspense } from "react";
-import routeComponents from "../routes"; // 동적으로 생성된 routes 불러오기
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import routeComponents from '../routes';
+import '../css/Til.css';
 
-const BlogComponent: React.FC = () => {
-  const [selectedDay, setSelectedDay] = useState<string>("17"); 
-  const navigate = useNavigate();
+const Til = () => {
+    const [openDay, setOpenDay] = useState<string | null>(null);
 
-  // 선택된 day에 맞는 동적 컴포넌트 찾기
-  const SelectedComponent = routeComponents.find(
-    (route) => route.day === selectedDay
-  )?.component;
+    const handleDayClick = (day: string) => {
+        setOpenDay(openDay === day ? null : day);
+    };
 
-  // routeComponents를 day 값 기준으로 내림차순 정렬 (문자열을 숫자로 변환하여 정렬)
-  const sortedRoutes = [...routeComponents].sort((a, b) => {
-    return Number(b.day) - Number(a.day); // day 값을 숫자로 변환하여 내림차순 정렬
-  });
-
-  return (
-    <div className="wrap">
-      <h2>오늘의 학습 (Today I Learn)</h2>
-      <div>
-        <h3>Day {selectedDay} 내용</h3>
-        <Suspense fallback={<p>Loading...</p>}>
-          {SelectedComponent && <SelectedComponent />}
-        </Suspense>
-      </div>
-      <ul>
-        {sortedRoutes.map((route) => (
-          <li key={route.day}>
-            <button
-              onClick={() => {
-                setSelectedDay(route.day);
-                navigate(route.path); // 라우팅 이동
-              }}
-            >
-              Day {route.day}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+    return (
+        <>
+            <div>
+              
+                <div className="til-container">
+                    {routeComponents.slice().reverse().map(({ day, component: Component })=> (
+                        <div key={day} className="til-item">
+                            <button 
+                                className={`til-button ${openDay === day ? 'active' : ''}`}
+                                onClick={() => handleDayClick(day)}
+                            >
+                                Day {day}
+                            </button>
+                            {openDay === day && (
+                                <div className="til-content">
+                                    <Component />
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+                <div className="text-center mt-8">
+                    <Link 
+                        to="/" 
+                        className="inline-block bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition-colors"
+                    >
+                        홈으로 돌아가기
+                    </Link>
+                </div>
+            </div>
+        </>
+    );
 };
 
-export default BlogComponent;
+export default Til;

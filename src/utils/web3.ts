@@ -1,14 +1,8 @@
 import Web3 from "web3";
-import * as dotenv from "dotenv";
-
-// dotenv.config();
-// const INFURA_API_KEY = process.env.INFURA_API_KEY
-
-//dotenv로 key숨기기
-
-const INFURA_API_KEY="f758d04f5c2c467389c34d512e7fa686"
+import dotenv from "dotenv";
 
 
+const INFURA_API_KEY = process.env.INFURA_API_KEY;
 
 const web3 = new Web3(`https://public-en-kairos.node.kaia.io/v3/${ INFURA_API_KEY }`);
 
