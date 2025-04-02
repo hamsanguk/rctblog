@@ -12,7 +12,7 @@ const generateTilRoutes = (start: number, end: number) => {
     return route; 
 };
 
-const routes = generateTilRoutes(1, 19); // <----------------------추가될때마다 오른쪽 숫자++ 수동으로변경
+const routes = generateTilRoutes(1, 20); // <<------------|| 추가될때마다 오른쪽 숫자++ 수동으로변경
 
 const loadComponent = (day: string) => {
     return lazy(() => import(`./til/Day${day}`)); // 동적으로 컴포넌트 로딩
