@@ -6,7 +6,7 @@ const Day23: React.FC = () => {
             <dl className="dayWrap">
                 <dt className="daybutton">day23</dt>
                 <dd className="daycontent">
-                    <h3>solidity abi</h3>
+                    <h3>solidity abi day45</h3>
                     <p>
                         컨트랙트 호출이란 배포된 컨트랙트의 함수를 호출하는것으로 상태변경이나 데이터조회가 가능하다 <br />
                         <ul>
