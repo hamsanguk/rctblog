@@ -1,6 +1,37 @@
 import React from "react";
 
 const Day27 = ()=>{
+    const code = `
+function findAbbreviation(strA, strB) {
+  const m = strA.length;
+  const n = strB.length;
+
+  // DP 테이블: dp[i][j]는 strA의 i번째까지, strB의 j번째까지 비교했을 때 가능한지
+  const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(false));
+  dp[0][0] = true;
+
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j <= n; j++) {
+      if (!dp[i][j]) continue;
+
+      const aChar = strA[i];
+      const upperA = aChar.toUpperCase();
+
+      // 1. 소문자면 삭제 가능 (strB의 j를 건너뛴다)
+      if (aChar !== upperA) {
+        dp[i + 1][j] = true;
+      }
+
+      // 2. 현재 문자가 strB의 j번째 문자와 대소문자 관계 없이 같으면 매칭
+      if (j < n && upperA === strB[j]) {
+        dp[i + 1][j + 1] = true;
+      }
+    }
+  }
+
+  return dp[m][n];
+}
+  `;
     return(
         <div>
             <dl className="dayWrap">
@@ -15,38 +46,7 @@ const Day27 = ()=>{
                     strA는 현재 문자이며 소문자에서 대문자변경이나 소문자 제거 선택지만 있다 strB는 strA로 부터 변경될 문자 
                     <p>
                         <pre>
-                            <code>
-                            function findAbbreviation(strA, strB) {
-                                const m = strA.length;
-                                const n = strB.length;
-                                
-                                // DP 테이블: dp[i][j]는 strA의 i번째까지, strB의 j번째까지 비교했을 때 가능한지
-                                const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(false));
-                                dp[0][0] = true;
-
-                                for (let i = 0; i < m; i++) {
-                                    for (let j = 0; j <= n; j++) {
-                                    if (!dp[i][j]) continue;
-
-                                    const aChar = strA[i];
-                                    const upperA = aChar.toUpperCase();
-
-                                    // 1. 소문자면 삭제 가능 (strB의 j를 건너뛴다)
-                                    if (aChar !== upperA) {
-                                        dp[i + 1][j] = true;
-                                    }
-
-                                    // 2. 현재 문자가 strB의 j번째 문자와 대소문자 관계 없이 같으면 매칭
-                                    if (j < n && upperA === strB[j]) {
-                                        dp[i + 1][j + 1] = true;
-                                    }
-                                    }
-                                }
-
-                                return dp[m][n];
-                                }
-
-                            </code>
+                            <code>{code}</code>
                         </pre>
                                 dp[i][j]는 strA의 i번째 까지와 strB의 j번째까지 비교했을 때 변환이 가능한지를 의미. <br/>
                                 - dp[0][0]은  빈 문자열 간 매칭이므로 true로 시작 <br/>
