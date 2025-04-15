@@ -8,6 +8,7 @@ import Explorer from './components/Explorer';
 import TxPage from './components/TxPage';
 import BlockPage from './components/BlockPage';
 import Address from './components/Address';
+import MintNft from './components/MintNft';
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
           <Route path="/explorer/tx/:txHash" element={<TxPage />} />
           <Route path="/explorer/block/:blockNumber" element={<BlockPage />} />
           <Route path="/explorer/address/:address" element={<Address />} /> {/* 추가된 주소 페이지 경로 */}
+          <Route path="/mintNft" element={<MintNft/>}/>
         </Routes>
         <Til/>
-     
       </div>
     </BrowserRouter>
   );

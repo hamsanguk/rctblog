@@ -36,7 +36,7 @@ const Day28 = ():JSX.Element=>{
     <p>
       <strong>준비:</strong> Kairos 테스트 토큰이 있는 Private Key, <code>config.ts</code>에 Kairos 네트워크 등록
     </p>
-    <p>1. deploy → 2. mint</p>
+    <p>1. deploy(kairos에 메타데이터) → 2. mint(uploadmetadata와 함께 이미지 업로딩과 민팅)</p>
     <hr />
 
     <p>

@@ -13,10 +13,13 @@ const Header = (): JSX.Element => {
             <Link to="/">TIL</Link> |
           </li>
           <li>
-            <Link to="/wallet">MyWallet</Link> |
+            <Link to="/wallet">MyWallet </Link> |
           </li>
           <li>
-            <Link to="/explorer">Explorer</Link>
+            <Link to="/explorer">Explorer </Link> |
+          </li>
+          <li>
+            <Link to="/mintnft">Mint NFT</Link>
           </li>
         </ul>
       </nav>

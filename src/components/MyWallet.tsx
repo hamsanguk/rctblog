@@ -37,7 +37,7 @@ const MyWallet = () => {
     }
   };
 
-  // Load wallet and transactions from localStorage
+  // 로컬스토리지에서 지갑, tx불러오기
   useEffect(() => {
     const savedWallet = localStorage.getItem("wallet");
     if (savedWallet) {

@@ -53,11 +53,7 @@ function findAbbreviation(strA, strB) {
                                 - strA의 문자를 순차적으로  살펴보며 다음 상태로의 전의(transition)을 정의 <br/>
                                 - 소문자 삭제, 대문자 변환 비교 가능, 대문자는 그대로 비교만 가능 <br/>
                     </p>
-                    <pre>
-                        <code>
-                           
-                        </code>
-                    </pre>
+                    
                     <p>chainlink
                         js로 알고리즘 구현이 익숙하고 자연스러워 지면 솔리디티의 습득시간이 단축
                     </p>
