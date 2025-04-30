@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { uploadToPinata, uploadMetadataToPinata } from "../utils/pinata";
+import { uploadFileToIPFS, uploadMetaData } from "../pinata";
 import { mintNFT, loginMetamask } from "../utils/web3MintNFT";
+import { Tmetadata } from "../types/types";
 import "../css/MintForm.css"
 
 const MintForm = () => {
@@ -15,13 +16,24 @@ const MintForm = () => {
     setMinting(true);
     try {
       const address = await loginMetamask();
-      const imageUrl = await uploadToPinata(file);
-      const metadataUrl = await uploadMetadataToPinata(name, desc, imageUrl);
+
+      const formData = new FormData();
+      formData.append("file", file);
+      const imageUrl = await uploadFileToIPFS(formData);
+
+      const metadata: Tmetadata = {
+        name,
+        discription: desc,
+        image: imageUrl,
+      };
+      const metadataUrl = await uploadMetaData(metadata);
+      if(!metadataUrl){throw new Error('metadata 업로드 실패')}
       const txHash = await mintNFT(metadataUrl, address);
+
       alert("민팅 완료! TX: " + txHash);
     } catch (err) {
       alert(`민팅실패: ${err}`);
-      console.log()
+      console.log(err);
     }
     setMinting(false);
   };

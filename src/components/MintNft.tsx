@@ -19,16 +19,16 @@ const MintNft = (): JSX.Element => {
     }
   };
 
-  const connectWithPrivateKey = async () => {
-    try {
-      const web3 = new Web3("https://public-en-kairos.node.kaia.io");
-      const account = web3.eth.accounts.privateKeyToAccount(privateKey);
-      setWallet(account.address);
-    } catch (err) {
-      console.error("잘못된 개인키입니다.");
-      alert("잘못된 개인키입니다.");
-    }
-  };
+  // const connectWithPrivateKey = async () => {
+  //   try {
+  //     const web3 = new Web3("https://public-en-kairos.node.kaia.io");
+  //     const account = web3.eth.accounts.privateKeyToAccount(privateKey);
+  //     setWallet(account.address);
+  //   } catch (err) {
+  //     console.error("잘못된 개인키입니다.");
+  //     alert("잘못된 개인키입니다.");
+  //   }
+  // };
 
   useEffect(() => {
     const fetchNFTs = async () => {
@@ -48,19 +48,20 @@ const MintNft = (): JSX.Element => {
         <>
           <div>
             <h3>지갑 주소: {wallet}</h3>
-            <button onClick={() => navigate("/mint")}>NFT 민팅하기</button>
+            <button onClick={() => navigate("/mint")}>NFT upload</button>
           </div>
-
           <div className="nft-list">
             {nfts.map((nft, idx) => (
               <div
                 key={idx}
                 className="nftCard"
-                onClick={() => navigate(`/nft/${nft.token_id}`)}
-              >
+                onClick={() => navigate(`/nft/${nft.token_id}`)}>
                 <img src={nft.image_url} alt={nft.name} />
                 <p>{nft.name}</p>
+                <p>{nft.network}</p>
+                <p>{nft.description}</p>
               </div>
+
             ))}
           </div>
         </>

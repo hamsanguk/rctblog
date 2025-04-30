@@ -18,7 +18,6 @@ const BlockPage: React.FC = () => {
             setLoading(false);
             return;
         }
-
         const fetchBlock = async () => {
             try {
                 setLoading(true);

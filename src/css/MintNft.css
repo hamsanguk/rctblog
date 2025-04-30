@@ -4,3 +4,22 @@
     height: 1018px;
     border:3px solid #555;
 }
+.nft-list{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    border:1px solid red;
+    
+}
+.nft-list>.nftCard{
+    width: 240px;
+    background-color: #eee;
+    border:1px solid green;
+}
+.nftCard>img{
+   display:block;
+   width: 100%;
+
+
+    
+}
