@@ -4,8 +4,8 @@ const Day24: React.FC = () => {
     return (
         <>
             <dl className="dayWrap">
-                <dt className="dayButton">day24</dt>
-                <dd className="dayContent">
+                <dt className="daybutton">day24</dt>
+                <dd className="daycontent">
                     <p>
                         <h5>4/8 erc20과제 </h5>
                         <a href="https://github.com/hamsanguk/erc20">openzeppelin 주소</a> <br/>
