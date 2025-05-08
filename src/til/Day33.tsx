@@ -66,3 +66,4 @@ const Day33=()=>{
         </dl>
     )
 }
+export default Day33;

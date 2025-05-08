@@ -37,3 +37,4 @@ const Day29 = ():JSX.Element=>{
         </>
     )
 }
+export default Day29;

@@ -83,3 +83,4 @@ const Day32=()=>{
         </>
     )
 }
+export default Day32;
