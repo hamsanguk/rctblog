@@ -2,7 +2,7 @@ import React,{JSX} from "react";
 
 const Day28 = ():JSX.Element=>{
     return (
-        <>
+        
             <dl className="dayWrap">
   <dt className="daybutton">4.14</dt>
   <dd className="daycontent">
@@ -65,10 +65,7 @@ const Day28 = ():JSX.Element=>{
         메타데이터와 이미지의 공개 IPFS링크
     </p>
   </dd>
-</dl>
-
-
-        </>
+</dl>   
     )
 }
 export default Day28;

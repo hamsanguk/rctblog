@@ -1,6 +1,6 @@
-import React from "react";
+import React,{JSX} from "react";
 
-const Day27 = ()=>{
+const Day27 = ():JSX.Element=>{
     const code = `
 function findAbbreviation(strA, strB) {
   const m = strA.length;
@@ -62,3 +62,4 @@ function findAbbreviation(strA, strB) {
         </div>
     )
 }
+export default Day27;

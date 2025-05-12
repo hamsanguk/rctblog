@@ -1,6 +1,6 @@
-import React from "react";
+import React,{JSX} from "react";
 
-const Day26 = ()=>{
+const Day26 = ():JSX.Element=>{
     return(
         <div>
             <dl className="dayWrap">
