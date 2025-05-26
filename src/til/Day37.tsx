@@ -42,7 +42,6 @@ const Day37 = ():JSX.Element=>{
                         <li>Isolation:트랜잭션간 간섭 없음</li>
                         <li>Durability:결과는 영구적 저장</li>
                     </ul>
-
                 </div>
             </dd>
         </dl>
