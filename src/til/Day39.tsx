@@ -31,6 +31,10 @@ const Day39 = ()=>{
                     [index가 필요한 경우] where로 특정 값을 자주 검색할때:빠른 조건 검색 가능<br/>
                     join에 사용하는 컬럼:join성능 향상<br/>
                     order by || group by에 사용되는 컬럼: 정렬성능 향상
+                    <h4> 만들어진 index조회: 기준테이블에서 존재하는 인덱스 전체 조회</h4>
+                    select indexname,indexdef from pg_indexes where tablename ='기준테이블'
+                    <h4>전체 테이블에 존재하는 인덱스 조회</h4>
+                    select tablename,indexname,indexdef from pg_indexes where schemaname = 'public';
                 </p>
                 <h3>정규화(Nomalization)</h3>
                 <p>
