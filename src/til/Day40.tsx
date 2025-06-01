@@ -22,3 +22,4 @@ const Day40 = ()=>{
         </dl>
     )
 }
+export default Day40;
