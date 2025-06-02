@@ -98,6 +98,7 @@ const Day44 = () => {
                         <p>
                             실제 실행 없이 코드 자체만을 분석하여 취약 패턴을 탐지합니다. Slither는 빠르고 상세한 리포트를 제공하고, SmartCheck는 XML 변환 후 XPath로 보안 위험을 식별합니다.
                         </p>
+                        <img src="./images/slither.png" alt="slither" />
                     </li>
                 </ul>
 
