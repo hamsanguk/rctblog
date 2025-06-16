@@ -57,19 +57,15 @@ const Day44 = () => {
 
                 <h3>6. 이더 동결</h3>
                 <p>출금 경로가 없는 컨트랙트는 이더가 영구히 잠김. 긴급 출금 기능 필요.</p>
-
                 <h3>7. tx.origin</h3>
                 <p>
                     tx.origin으로 인증 시 피싱 공격에 노출. msg.sender 사용 권장.<br />
                     (예시) 공격자가 사용자의 인증된 지갑으로 만든 중간 컨트랙트를 호출하면,<br />
                     tx.origin == owner 조건을 통과해 권한을 탈취할 수 있습니다.
                 </p>
-
                 <h3>8. 서비스 거부 (DoS)</h3>
                 <p>예상치 못한 연산이나 호출 실패로 컨트랙트 기능 마비. 가스 최적화 및 예외 처리 필요.</p>
-
                 <hr />
-
                 <h2>취약점 탐지 도구</h2>
                 <ul>
                     <li>
@@ -85,14 +81,12 @@ const Day44 = () => {
                             수학적 증명을 통해 스마트 컨트랙트의 보안 속성을 보장합니다. Zeus는 LLVM 중간 언어로 변환하여 보안 정책을 적용하고, Securify는 DSL 기반 보안 패턴과 코드를 비교하여 위반 여부를 탐지합니다.
                         </p>
                     </li>
-
                     <li>
                         <strong>퍼징 기법:</strong> ContractFuzzer, Reguard
                         <p>
                             다양한 무작위 입력을 통해 실행 중 발생할 수 있는 예외나 충돌을 탐지합니다. 예컨대 ContractFuzzer는 예외 처리 미흡 또는 DoS 가능성을 테스트할 수 있습니다.
                         </p>
                     </li>
-
                     <li>
                         <strong>정적 분석:</strong> Slither, SmartCheck
                         <p>
@@ -101,7 +95,6 @@ const Day44 = () => {
                         <img src="./images/slither.png" alt="slither" />
                     </li>
                 </ul>
-
                 <h2>결론</h2>
                 <p>스마트 컨트랙트의 보안은 필수적입니다. 주요 취약점을 이해하고 적절한 도구를 활용하여 신뢰 가능한 DApp을 구축해야 합니다.</p>
             </dd>
