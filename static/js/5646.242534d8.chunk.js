@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkrctblg=self.webpackChunkrctblg||[]).push([[5646],{5646:(s,a,c)=>{c.r(a),c.d(a,{default:()=>e});c(5043);var d=c(579);const e=()=>(0,d.jsx)("div",{children:(0,d.jsxs)("dl",{className:"dayWrap",children:[(0,d.jsx)("dt",{className:"daybutton",children:"5/12"}),(0,d.jsx)("dd",{className:"daycontent",children:"\uc4f8\uc608\uc815"})]})})}}]);
+//# sourceMappingURL=5646.242534d8.chunk.js.map
